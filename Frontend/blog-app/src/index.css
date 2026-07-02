@@ -1,0 +1,30 @@
+/* Hide scrollbar for Chrome, Safari and Opera */
+*::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+* {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+/* Remove default body margin */
+body {
+  margin: 0;
+  padding: 0;
+  /* overflow-y: hidden; */
+  background : linear-gradient(135deg, #141a2b 0%, #f8fafc 50%, #ffffff 100%);
+}
+
+/* Make sure the layout fills the viewport */
+.main-layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Push footer to bottom */
+.main-layout main {
+  flex: 1;
+}
